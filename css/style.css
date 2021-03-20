@@ -20,6 +20,35 @@ body{
 section{
     padding:100px 0;
 }
+section .container .title{
+    text-align: center;
+    font-size:40px;
+    font-weight: 600;
+    margin-bottom:30px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+section .container .title::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    background:red;
+    height:5px;
+    width:140px;
+    left:50%;
+    transform: translate(-50%);
+}
+section .container .title::after{
+    padding:0 5px;
+    color:var(--primary-color);
+    position: absolute;
+    bottom:-10px;
+    background:#fff;
+    font-size:17px;
+
+    left:50%;
+    transform: translate(-50%);
+}
 /* navbar styling */
 .nav .container .navbar .menu{
     display: none;
@@ -107,6 +136,34 @@ section{
 .home .home-content .home-right img{
     width:450px;
 }
+
+/* about section */
+section .container .title::after{
+    content:"about me";
+}
+.about .about-content{
+    margin:80px 0;
+}
+.about .about-content .column{
+    width:calc(50% - 30px);
+}
+.about .about-content .left{
+}
+.about .about-content .left .img-bg{
+    background:var(--primary-color);
+    position: relative;
+    width:380px;
+    height:200px;
+    border-radius:41% 59% 71% 29% / 45% 98% 2% 55% ;
+    border-bottom:9px solid var(--primary-color);
+}
+.about .about-content .left .img-bg img{
+    width:450px;
+    margin-top:-101px;
+    object-fit: cover;
+    margin-bottom:0;
+}
+
 /* media Query */
 @media only screen and (max-width:1220px){
     .container{
