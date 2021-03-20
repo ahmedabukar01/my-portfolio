@@ -110,8 +110,14 @@ section{
 /* media Query */
 @media only screen and (max-width:1220px){
     .container{
+        padding-left:15px;
+    }
+}
+@media only screen and (max-width:1180px){
+    .container{
         width:930px;
         padding:0 50px;
+        margin:auto;
     }
     nav{
         display:none;
@@ -163,9 +169,23 @@ section{
 
 @media only screen and (max-width:968px){
     .container{
+        width:unset;
         padding:0 30px;
     }
     .home .home-content .home-right{
         display:none;
+    }
+    .home .home-content .home-left .text{
+        font-size: 17px;
+    }
+    .home .home-content .home-left .name{
+        font-size:50px;
+    }
+    .home .home-content .home-left .who{
+        font-size: 25px;
+    }
+    .home .home-content .home-left a{
+        padding:10px 30px;
+        font-size: 20px;
     }
 }
