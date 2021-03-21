@@ -148,9 +148,9 @@ section .container .title::after{
 .about .about-content .column{
     width:calc(50% - 30px);
 }
+
 .about .about-content .left .img-bg{
     background:var(--primary-color);
-    position: relative;
     width:380px;
     height:200px;
     border-radius:41% 59% 71% 29% / 45% 98% 2% 55% ;
@@ -203,6 +203,7 @@ section .container .title::after{
         top:0;
         left:0;
         background:#000;
+        z-index:999;
     }
     nav.show img{
         float:right;
@@ -245,6 +246,9 @@ section .container .title::after{
         width:unset;
         padding:0 30px;
     }
+    nav.show{
+        width:100%;
+    }
     .home .home-content .home-right{
         display:none;
     }
@@ -265,12 +269,21 @@ section .container .title::after{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
-    .about .about-content .left{
-        margin: 30px 0;
+    .about .about-content .column.left{
+        margin: 40px;
+        width:unset;
     }
     .about .about-content .column{
-        
+        width:100%;
+    }
+    .about .about-content .right .text{
+        font-size: 33px;
+    }
+    .about .about-content .right .info{
+        font-size: 19px;
+        font-weight: 500;
     }
 }
 @media only screen and (max-width:668px){
@@ -287,6 +300,10 @@ section .container .title::after{
         padding:8px 20px;
         font-size: 19px;
     }
+    .about .about-content .right .text{
+        font-size: 19px;
+        font-weight: bolder;
+    }
 
 }
 @media only screen and (max-width:390px){
@@ -302,6 +319,24 @@ section .container .title::after{
     .home .home-content .home-left a{
         padding:8px 18px;
         font-size: 19px;
+    }
+    .about .about-content .left{
+        padding-left:20px;
+    }
+    .about .about-content .left .img-bg{
+        width:340px;
+        height:180px;
+    }
+    .about .about-content .left .img-bg img{
+        width:450px;
+        margin-top:-121px;
+    }
+    .about .about-content .right .text{
+        font-size: 20px;
+    }
+    .about .about-content .right .info{
+        font-size: 16px;
+        text-align:center;
     }
 
 }
