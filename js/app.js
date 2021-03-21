@@ -1,7 +1,17 @@
 const menu = document.querySelector('#menu');
 const nav = document.querySelector('nav');
+const navBar = document.querySelector('.nav');
 const exit = document.querySelector('#exit');
 
+// scroll effect
+window.addEventListener('scroll', ()=>{
+    if(window.scrollY > 50){
+        navBar.classList.add('sticky');
+    } else{
+        navBar.classList.remove('sticky');
+    }
+})
+// menu click
 menu.addEventListener('click',()=>{
     nav.classList.add('show');
 });
