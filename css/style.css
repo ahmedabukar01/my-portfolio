@@ -14,7 +14,6 @@ body{
 .container{
     width:1300px;
     padding: 0 90px;
-    margin:auto;
 }
 /* all same codes */
 section{
@@ -287,6 +286,7 @@ section .container .title::after{
     }
 }
 @media only screen and (max-width:668px){
+
     .home .home-content .home-left .text{
         font-size: 17px;
     }
