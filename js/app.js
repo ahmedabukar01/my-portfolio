@@ -17,4 +17,11 @@ menu.addEventListener('click',()=>{
 });
 exit.addEventListener('click',()=>{
     nav.classList.remove('show');
-})
+});
+// typing
+const typing = new Typed('.typing',{
+    strings:["Developer","Designer","Fleelancer","Youtuper","Blogger"],
+    typeSpeed:100,
+    backSpeed:60,
+    loop:true
+});
