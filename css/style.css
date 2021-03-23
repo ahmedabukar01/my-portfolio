@@ -4,6 +4,7 @@
     --secondary-color:#333;
     --thirty-color:crimson;
     --color: #007af3;
+    --services-color:#1b1a1b;
 }
 *{
     margin:0;
@@ -27,7 +28,7 @@ section{
 }
 section .container .title{
     text-align: center;
-    font-size:40px;
+    font-size:50px;
     font-weight: 600;
     margin-bottom:30px;
     font-family: 'Poppins', sans-serif;
@@ -54,11 +55,12 @@ section .container .title::after{
     transform: translate(-50%);
 }
 section.services .container .title::after{
-    background:var(--primary-color);
+    background:var(--services-color);
     color:#fff;
 }
 .home .container .home-content,
-.services .container .services-content{
+.services .container .services-content,
+.skills .container .skills-content{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,12 +109,12 @@ section.services .container .title::after{
     padding:0 4px;
     color:#000;
     margin:0 6px;
-    font-size:18px;
+    font-size:20px;
     transition: all 0.3s ease;
 }
 .navbar nav ul li a:hover{
+    font-weight: bold;
     color:var(--primary-color);
-    font-weight: 500;
 }
 
 /* showcase styling */
@@ -229,7 +231,7 @@ section.services .container .title::after{
     content:'02';
 }
 section.services{
-    background:rgb(27, 26, 27);
+    background:#1b1a1b;
     color:#fff;
 }
 .services .services-content .box{
@@ -266,6 +268,68 @@ section.services{
 }
 .services .services-content .box:hover .card{
     transform:scale(1.1)
+}
+/* skills section */
+section.skills .container .title::after{
+    content:'03';
+}
+.skills .skills-content .left{
+    width:calc(45% - 10px);
+}
+.skills .skills-content .right{
+    width:calc(55% - 10px);
+}
+.skills .skills-content .left{
+    font-size:22px;
+}
+.skills .skills-content .right .box{
+    margin:10px 0;
+}
+.skills .right .box .card{
+    display:flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding:4px 0;
+}
+.skills .right .box .card .skill{
+    font-size: 22px;
+    font-weight: 500;
+
+}
+.skills .right .box .line{
+    width:100%;
+    background:lightgrey;
+    height:10px;
+    border-radius: 6px;
+    position:relative;
+}
+.skills .right .box .line::before{
+    position:absolute;
+    content:"";
+    left:0;
+    background:var(--primary-color);
+    height:100%;
+}
+.skills .right .box .line.html::before{
+    width:95%;
+}
+.skills .right .box .line.css::before{
+    width:89%;
+}
+.skills .right .box .line.js::before{
+    width:90%;
+}
+.skills .right .box .line.fr::before{
+    width:75%;
+}
+.skills .right .box .line.rt::before{
+    width:85%;
+}
+.skills .right .box .line.nd::before{
+    width:88%;
+}
+.skills .right .box .line.fg::before{
+    width:90%;
 }
 /* media Query */ 
 @media only screen and (max-width:1220px){
