@@ -501,6 +501,9 @@ section.skills .container .title::after{
     .home .home-content .home-left .who{
         font-size: 21px;
     }
+    .about .about-content .right .cv{
+        text-align: center;
+    }
 }
 @media only screen and (max-width:390px){
     .home .home-content .home-left .text{
@@ -535,8 +538,9 @@ section.skills .container .title::after{
         text-align:center;
     }
     .about .about-content .right .cv{
-        text-align: left;
+        text-align: center;
     }
+
     .about .about-content .right a{
         padding:10px 17px;
         font-size: 18px;
@@ -577,7 +581,7 @@ section.skills .container .title::after{
         text-align:left;
     }
     .about .about-content .right .cv{
-        text-align: left;
+        text-align: center;
     }
     .about .about-content .right a{
         padding:9px 13px;
