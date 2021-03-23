@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
 :root{
     --primary-color:#840ff1;
+    --secondary-color:#333;
+    --thirty-color:crimson;
+    --color: #007af3;
 }
 *{
     margin:0;
@@ -8,8 +11,11 @@
     text-decoration: none;
     box-sizing:border-box;
 }
+html,
 body{
-    font-family:'Lato', sans-serif;
+    font-family:"Lato", sans-serif;
+    position: absolute;
+    width:100%;
 
 }
 .container{
@@ -44,9 +50,18 @@ section .container .title::after{
     bottom:-10px;
     background:#fff;
     font-size:17px;
-
     left:50%;
     transform: translate(-50%);
+}
+section.services .container .title::after{
+    background:var(--primary-color);
+    color:#fff;
+}
+.home .container .home-content,
+.services .container .services-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 /* navbar styling */
 .nav .container{
@@ -71,8 +86,8 @@ section .container .title::after{
 }
 .nav .container .navbar{
     height:70px;
-    flex-wrap: wrap;
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -103,10 +118,6 @@ section .container .title::after{
 /* showcase styling */
 .home{
     background-color:rgb(250, 247, 252);
-}
-.home .home-content{
-    display:flex;
-    justify-content: space-between;
 }
 .home .home-content .home-left{
     padding-top:20px;
@@ -217,6 +228,45 @@ section.about .container .title::after{
 section.services .container .title::after{
     content:'02';
 }
+section.services{
+    background:rgb(27, 26, 27);
+    color:#fff;
+}
+.services .services-content .box{
+    width:calc(33% - 10px);
+    background:var(--secondary-color);
+    padding:40px 10px;
+    border-radius: 6px;
+    text-align:center;
+    margin:30px 0 20px 0;
+    transition: all 0.3s ease;
+}
+.services .services-content .box i{
+    font-size: 60px;
+    margin-bottom: 10px;
+    color:var(--primary-color);
+}
+.services .services-content .box .text{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Poppins",sans-serif;
+}
+.services .services-content .box .info{
+    font-size: 20px;
+    text-align: center;
+}
+.services .services-content .box:hover{
+    background:var(--primary-color);
+}
+.services .services-content .box:hover i{
+    color:#fff;
+}
+.services .services-content .box .card{
+    transition: all 0.3s ease;
+}
+.services .services-content .box:hover .card{
+    transform:scale(1.1)
+}
 /* media Query */ 
 @media only screen and (max-width:1220px){
     .container{
@@ -226,7 +276,6 @@ section.services .container .title::after{
 @media only screen and (max-width:1180px){
     .container{
         padding:0 50px;
-        margin:0;
     }
     nav{
         display:none;
@@ -323,9 +372,11 @@ section.services .container .title::after{
         padding:10px 17px;
         font-size: 18px;
     }
+    .services .services-content .box{
+        width:calc(50% - 10px);
+    }
 }
 @media only screen and (max-width:668px){
-
     .home .home-content .home-left .text{
         font-size: 17px;
     }
@@ -347,11 +398,15 @@ section.services .container .title::after{
         padding:10px 17px;
         font-size: 18px;
     }
+    .services .services-content .box{
+        width:100%;
+    }
 
 }
 @media only screen and (max-width:470px){
-    .container{
-        padding:;
+    html,
+    body{
+        width:unset;
     }
     .about .about-content .right .cv{
         text-align: left;
