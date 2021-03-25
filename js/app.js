@@ -10,7 +10,8 @@ window.addEventListener('scroll', ()=>{
     } else{
         navBar.classList.remove('sticky');
     }
-})
+});
+
 // menu click
 menu.addEventListener('click',()=>{
     nav.classList.add('show');

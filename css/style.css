@@ -15,8 +15,6 @@
 html,
 body{
     font-family:"Lato", sans-serif;
-    position: absolute;
-    width:100%;
     scroll-behavior:smooth;
 }
 .container{
@@ -268,6 +266,7 @@ section.services{
 .services .services-content .box:hover .card{
     transform:scale(1.1)
 }
+
 /* skills section */
 section.skills .container .title::after{
     content:'03';
@@ -439,7 +438,6 @@ section.skills .container .title::after{
         font-size: 19px;
         font-weight: 500;
     }
-    
     .about .about-content .right a{
         padding:10px 17px;
         font-size: 18px;
@@ -484,10 +482,6 @@ section.skills .container .title::after{
 
 }
 @media only screen and (max-width:470px){
-    html,
-    body{
-        width:unset;
-    }
     .about .about-content .right .cv{
         text-align: left;
     }
