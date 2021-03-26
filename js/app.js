@@ -1,9 +1,8 @@
-
-/*const menu = document.querySelector('#menu');
+const menu = document.querySelector('#menu');
 const nav = document.querySelector('nav');
 const navBar = document.querySelector('.nav');
 const exit = document.querySelector('#exit');
-
+/*
 // scroll effect
 window.addEventListener('scroll', ()=>{
     if(window.scrollY > 50){
@@ -20,11 +19,11 @@ menu.addEventListener('click',()=>{
 exit.addEventListener('click',()=>{
     nav.classList.remove('show');
 });
+*/
 // typing
 const typing = new Typed('.typing',{
-    strings:["Developer","Designer","Fleelancer","Youtuper","Blogger"],
+    strings:["Developer","Freelancer","Designer","Youtuper","Blogger"],
     typeSpeed:100,
     backSpeed:60,
     loop:true
 });
-*/
