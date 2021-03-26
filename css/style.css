@@ -73,6 +73,9 @@ header .container .logo{
     font-size: 22px;
     font-weight: 600;
 }
+header .container .menu{
+    font-size: 19px;
+}
 /* showcase section */
 section.home{
     background:#faf7fc;
@@ -85,11 +88,15 @@ section.home{
 .home .home-left .name{
     font-weight: 600;
     font-size: 35px;
+    margin:5px 0;
     font-family: "Ubuntu", sans-serif;
 }
 .home .home-left .who{
     font-size: 20px;
-
+}
+.home .home-left .who span{
+    font-weight: 600;
+    color:var(--primary-color);
 }
 .home .home-left a{
     display:inline-block;
@@ -100,16 +107,12 @@ section.home{
     border-radius: 6px;
     font-size: 17px;
     font-weight: 600;
-    margin-top:10px;
+    margin-top:20px;
     border:2px solid var(--primary-color);
     transition: all 0.3s ease;
 }
 .home .home-left a:hover{
     background:none;
-    color:var(--primary-color);
-}
-.home .home-left .who span{
-    font-weight: 600;
     color:var(--primary-color);
 }
 .home .home-content .home-right{
@@ -335,4 +338,50 @@ section.portfolio .container .title::after{
     color:#fff;
     padding:4px 8px;
     border-radius: 6px;
+}
+.portfolio .projects .card{
+    border-radius: 6px;
+    width:100%;
+    margin:20px 0;
+    text-align: center;
+    background:#f1efef;
+    transition: all 0.3s ease;
+    border:2px solid #e2dcdc;
+    overflow: hidden;
+}
+.portfolio .projects .card img{
+    width:100%;
+    object-fit: cover;
+}
+.portfolio .projects .card .box{
+    transition: all 0.3s ease;
+}
+.portfolio .projects .card:hover .box{
+    transform: scale(1.05);
+}
+.portfolio  .card .info{
+    text-align: center;
+}
+.portfolio  .card .info .subtitle .name{
+    display: block;
+    margin:10px 0 0 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.portfolio  .card .info a{
+    background:var(--primary-color);
+    color:#fff;
+    padding:5px 10px;
+    display:inline-block;
+    margin:20px 5px 5px 0;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+    border:2px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+.portfolio  .card .info a:hover{
+    background:none;
+    color:var(--primary-color);
 }
