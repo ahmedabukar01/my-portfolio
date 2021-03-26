@@ -60,15 +60,15 @@ section .container .title::after{
 }
 
 /* navbar */
-.navbar nav{
+header nav{
      display:none;
 }
-.navbar .container{
+header .container{
     display:flex;
     place-content: space-between;
     align-items: center;
 }
-.navbar .container .logo{
+header .container .logo{
     color:var(--primary-color);
     font-size: 22px;
     font-weight: 600;
@@ -76,6 +76,7 @@ section .container .title::after{
 /* showcase section */
 section.home{
     background:#faf7fc;
+    height:70vh;
 }
 .home .home-left .text{
     font-size: 19px;
@@ -264,7 +265,6 @@ section.skills .container .title::after{
 
 .skills .skills-content .right{
     width:100%;
-    padding-bottom: 80px;
 }
 .skills .skills-content .right .box{
     margin:10px 0;
@@ -314,4 +314,25 @@ section.skills .container .title::after{
 }
 .skills .right .box .line.fg::before{
     width:90%;
+}
+
+/* Portfolio*/
+section.portfolio .container .title::after{
+    content:"05";
+}
+.portfolio .portfolio-content .topics{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;;
+    margin-top: 30px;
+}
+.portfolio .topics .topic-box{
+    margin:5px 4px;
+    font-size: 17px;
+    background:var(--primary-color);
+    color:#fff;
+    padding:4px 8px;
+    border-radius: 6px;
 }
