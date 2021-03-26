@@ -1,14 +1,14 @@
 const menu = document.querySelector('#menu');
 const nav = document.querySelector('nav');
-const navBar = document.querySelector('.nav');
+const header = document.querySelector('header');
 const exit = document.querySelector('#exit');
-/*
+
 // scroll effect
 window.addEventListener('scroll', ()=>{
     if(window.scrollY > 50){
-        navBar.classList.add('sticky');
+        header.classList.add('sticky');
     } else{
-        navBar.classList.remove('sticky');
+        header.classList.remove('sticky');
     }
 });
 
@@ -19,7 +19,7 @@ menu.addEventListener('click',()=>{
 exit.addEventListener('click',()=>{
     nav.classList.remove('show');
 });
-*/
+
 // typing
 const typing = new Typed('.typing',{
     strings:["Developer","Freelancer","Designer","Youtuper","Blogger"],
