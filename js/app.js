@@ -1,4 +1,5 @@
-const menu = document.querySelector('#menu');
+
+/*const menu = document.querySelector('#menu');
 const nav = document.querySelector('nav');
 const navBar = document.querySelector('.nav');
 const exit = document.querySelector('#exit');
@@ -26,3 +27,4 @@ const typing = new Typed('.typing',{
     backSpeed:60,
     loop:true
 });
+*/
