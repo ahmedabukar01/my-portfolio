@@ -184,6 +184,8 @@ section.about .container .title::after{
 }
 .about .about-content .left{
     margin-bottom: 28px;
+    display:flex;
+    justify-content: center;
 }
 .about .about-content .left .img-bg{
     background:var(--primary-color);
@@ -373,6 +375,9 @@ section.skills .container .title::after{
 section.portfolio .container .title::after{
     content:"05";
 }
+section.portfolio{
+    background:
+}
 .portfolio .portfolio-content .topics{
     display:flex;
     justify-content: center;
@@ -384,7 +389,7 @@ section.portfolio .container .title::after{
 .portfolio .topics .topic-box{
     margin:5px 4px;
     font-size: 17px;
-    background:rgb(218, 214, 219);
+    background:#dad6db;
     color:#000;
     padding:4px 8px;
     border-radius: 6px;
@@ -441,4 +446,17 @@ section.portfolio .container .title::after{
 .portfolio  .card .info a:hover{
     background:none;
     color:var(--primary-color);
+}
+
+/* Responsive */
+@media only screen and (min-width:470px){
+    .home .home-left .text{
+        font-size: 22px;
+    }
+    .home .home-left .name{
+        font-size: 39px;
+    }
+    .home .home-left .who{
+        font-size: 22px;
+    }
 }
