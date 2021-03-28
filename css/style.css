@@ -17,6 +17,7 @@ html,
 body{
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .container{
     padding:5px 20px;
@@ -25,6 +26,12 @@ section{
     padding:100px 0;
 }
 /* all same codes */
+header .container,
+.home .home-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
 section{
     padding:100px 0;
 }
@@ -73,7 +80,7 @@ header nav.show{
 }
 header .container{
     display:flex;
-    place-content: space-between;
+    justify-content: space-between;
     align-items: center;
 }
 header .container .logo{
@@ -86,6 +93,9 @@ header .container .menu{
 }
 header.sticky{
     background:var(--primary-color);
+    color:#fff;
+}
+header.sticky ul li a:hover{
     color:#fff;
 }
 header.sticky .logo{
@@ -123,13 +133,13 @@ header nav ul li a{
 header nav ul li a.home{
     margin: 60px 0 0 0 ;
 }
-header nav ul li a:hover{
+header nav.show ul li a:hover{
     font-weight: 600;
 }
 /* showcase section */
 section.home{
     background:#faf7fc;
-    height:70vh;
+    height:90vh;
 }
 .home .home-left .text{
     font-size: 19px;
@@ -263,13 +273,16 @@ section.services{
     background:var(--services-color);
     color:#fff;
 }
+.services .services-content{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
+}
 .services .services-content .box{
-    width:100%;
     background:var(--secondary-color);
     padding:40px 10px;
     border-radius: 6px;
     text-align:center;
-    margin:30px 0 20px 0;
+    margin:30px 5px 20px 0;
     transition: all 0.3s ease;
 }
 .services .services-content .box i{
@@ -375,9 +388,7 @@ section.skills .container .title::after{
 section.portfolio .container .title::after{
     content:"05";
 }
-section.portfolio{
-    background:
-}
+
 .portfolio .portfolio-content .topics{
     display:flex;
     justify-content: center;
@@ -386,6 +397,7 @@ section.portfolio{
     padding-bottom: 40px;;
     margin-top: 30px;
 }
+
 .portfolio .topics .topic-box{
     margin:5px 4px;
     font-size: 17px;
@@ -398,10 +410,13 @@ section.portfolio{
     background:var(--primary-color);
     color:#fff;
 }
+.portfolio .portfolio-content .projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem,1fr));
+}
 .portfolio .projects .card{
     border-radius: 6px;
-    width:100%;
-    margin:20px 0;
+    margin:20px 5px;
     text-align: center;
     background:#f1efef;
     transition: all 0.3s ease;
@@ -410,6 +425,7 @@ section.portfolio{
 }
 .portfolio .projects .card img{
     width:100%;
+    height:auto;
     object-fit: cover;
 }
 .portfolio .projects .card .box{
@@ -449,6 +465,72 @@ section.portfolio{
 }
 
 /* Responsive */
+@media only screen and (min-width:907px){
+    .container{
+        padding:0 50px;
+    }
+    header .container nav img,
+    .menu{
+        display: none;
+    }
+    header nav{
+        display:block;
+        position:unset;
+        height:auto;
+        width:100%;
+        background:none;
+    }
+    header .container .logo{
+        margin-top: 5px;
+        font-size: 28px;
+    }
+    header nav ul{
+       margin:0;
+       text-align: right;
+       margin-left:40px;
+    }
+    header nav ul li{
+        display: inline-block;
+    }
+    header nav ul li a.home{
+        margin:0;
+    }
+    header nav ul li a{
+        color:#000;
+        font-size: 21px;
+        margin:10px;
+        transition: all 0.3s ease;
+    }
+    header nav ul li a:hover{
+        color:var(--primary-color);
+    }
+    header.sticky a{
+        color:#fff;
+    }
+    .home .home-content .home-right{
+        display:block;
+    }
+    .home .home-content .home-right img{
+        width:450px;
+    }
+
+    .home .home-content .home-left .text{
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .home .home-content .home-left .name{
+        font-size:70px;
+    }
+    .home .home-content .home-left .who{
+        font-size: 32px;
+    }
+    .home .home-content .home-left a{
+        padding:13px 35px;
+        margin-top:20px;
+        font-size: 23px;
+    }
+} 
 @media only screen and (min-width:470px){
     .home .home-left .text{
         font-size: 22px;
@@ -458,5 +540,12 @@ section.portfolio{
     }
     .home .home-left .who{
         font-size: 22px;
+    }
+}
+@media only screen and (min-width:1080px){
+    .container{
+        min-width:1080px;
+        padding:0 90px;
+        margin:auto;
     }
 }
