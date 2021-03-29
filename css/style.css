@@ -27,7 +27,9 @@ section{
 }
 /* all same codes */
 header .container,
-.home .home-content{
+.home .home-content,
+.about .about-content,
+.skills .skills-content{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -283,7 +285,12 @@ section.services{
     border-radius: 6px;
     text-align:center;
     margin:30px 5px 20px 0;
+    overflow: hidden;
+    margin-right:10px;
     transition: all 0.3s ease;
+}
+.services .services-content .box:last-child{
+    margin-left:0;
 }
 .services .services-content .box i{
     font-size: 60px;
@@ -469,6 +476,9 @@ section.portfolio .container .title::after{
     .container{
         padding:0 50px;
     }
+    section .container .title{
+        font-size:50px;
+    }
     header .container nav img,
     .menu{
         display: none;
@@ -530,6 +540,49 @@ section.portfolio .container .title::after{
         margin-top:20px;
         font-size: 23px;
     }
+    .about .container .about-content{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .about .about-content .right .text{
+        font-size: 28px;
+        text-align: left;
+        width:380px;
+        font-family: "Poppins";
+    }
+    .about .about-content .right .info{
+        font-size: 17px;
+        text-align: justify;
+    }
+    .about .about-content .right .text::before{
+        left:43%;
+        transform: translate(-50%);
+    }
+    .about .about-content .right .text::after{
+        left:43%;
+        transform: translate(-50%);
+    }
+    .skills .skills-content .left{
+        width:calc(45% - 20px);
+    }
+    .skills .skills-content .left p{
+        text-align: justify;
+    }
+    .skills .skills-content .left p span{
+        display: block;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .skills .skills-content .left h2{
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .skills .skills-content .right{
+        width:calc(55% - 20px);
+    }
+    .skills .skills-content .right{
+        margin-top:40px;
+    }
 } 
 @media only screen and (min-width:470px){
     .home .home-left .text{
@@ -547,5 +600,9 @@ section.portfolio .container .title::after{
         min-width:1080px;
         padding:0 90px;
         margin:auto;
+    }
+    .services .services-content{
+        display: flex;
+        justify-content: space-between;
     }
 }
