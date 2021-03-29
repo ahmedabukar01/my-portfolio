@@ -28,8 +28,8 @@ section{
 /* all same codes */
 header .container,
 .home .home-content,
-.about .about-content,
-.skills .skills-content{
+.about .about-content
+{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -568,7 +568,11 @@ section.portfolio .container .title::after{
     .services .services-content .box{
         width:calc(33% -10px);
     }
-    
+    .skills .skills-content{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .skills .skills-content .left{
         width:calc(45% - 20px);
     }
