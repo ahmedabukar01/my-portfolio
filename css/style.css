@@ -316,7 +316,7 @@ section.services{
     transition: all 0.3s ease;
 }
 .services .services-content .box:hover .card{
-    transform:scale(1.1)
+    transform:scale(1.05);
 }
 
 /* skills section */
@@ -562,6 +562,13 @@ section.portfolio .container .title::after{
         left:43%;
         transform: translate(-50%);
     }
+    .services .services-content{
+        display: flex;
+    }
+    .services .services-content .box{
+        width:calc(33% -10px);
+    }
+    
     .skills .skills-content .left{
         width:calc(45% - 20px);
     }
@@ -601,8 +608,8 @@ section.portfolio .container .title::after{
         padding:0 90px;
         margin:auto;
     }
-    .services .services-content{
+    /* .services .services-content{
         display: flex;
         justify-content: space-between;
-    }
+    } */
 }
