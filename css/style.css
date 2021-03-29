@@ -470,7 +470,86 @@ section.portfolio .container .title::after{
     background:none;
     color:var(--primary-color);
 }
+/* Testmonials section */
+section.testimonials .container .title::before{
 
+}
+section.testimonials .container .title::after{
+    content:"06";
+    background:#222;
+}
+section.testimonials{
+    background:#222;
+    color:#fff;
+}
+.testimonials .carousel{
+    margin-top: 50px;
+}
+.testimonials .carousel .card{
+    background:#333;
+    border-radius: 6px;
+    padding:25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.testimonials .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.testimonials .carousel .card:hover .box{
+    transform:scale(1.04);
+}
+.testimonials .carousel .card img{
+    height:150px;
+    width:150px;
+    border:5px solid var(--primary-color);
+    border-radius: 50%;
+    object-fit: cover;
+}
+.testimonials .carousel .card p{
+    font-size: 17px;
+    margin-top:20px;
+}
+.testimonials .carousel .card .name{
+    color:var(--primary-color);
+    font-weight: 600;
+    margin-top: 20px;
+}
+.testimonials .carousel .card:hover{
+    background:var(--primary-color);
+}
+.testimonials .carousel .card:hover .name{
+    color:#fff;
+}
+.testimonials .carousel .card:hover img{
+    border-color: #fff;
+}
+.testimonials .carousel .card .name span{
+    color:lightgrey;
+    font-size: 10px;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    width:13px;
+    height: 13px;
+    border-radius: 50%;
+    margin:0 5px;
+    outline: none;
+    border:3px solid var(--primary-color)!important;
+}
+.owl-dot.active{
+    width:35px;
+    border-radius: 7px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: var(--primary-color)!important;
+}
 /* Responsive */
 @media only screen and (min-width:907px){
     .container{
@@ -612,8 +691,4 @@ section.portfolio .container .title::after{
         padding:0 90px;
         margin:auto;
     }
-    /* .services .services-content{
-        display: flex;
-        justify-content: space-between;
-    } */
 }

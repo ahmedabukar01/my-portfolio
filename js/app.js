@@ -3,6 +3,29 @@ const nav = document.querySelector('nav');
 const header = document.querySelector('header');
 const exit = document.querySelector('#exit');
 
+// jquery
+$(document).ready(function(){
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplayHoverPause:true,
+        autoplayTimeOut:2000,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:false
+            }
+        }
+    })
+})
 // scroll effect
 window.addEventListener('scroll', ()=>{
     if(window.scrollY > 50){
