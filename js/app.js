@@ -2,6 +2,7 @@ const menu = document.querySelector('#menu');
 const nav = document.querySelector('nav');
 const header = document.querySelector('header');
 const exit = document.querySelector('#exit');
+const li = document.querySelector('ul');
 
 // jquery
 $(document).ready(function(){
@@ -34,7 +35,10 @@ window.addEventListener('scroll', ()=>{
         header.classList.remove('sticky');
     }
 });
-
+// hide navbar
+li.addEventListener('click',e=>{
+    nav.classList.remove('show');
+});
 // menu click
 menu.addEventListener('click',()=>{
     nav.classList.add('show');

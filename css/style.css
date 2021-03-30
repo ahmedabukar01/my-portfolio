@@ -547,6 +547,92 @@ section.testimonials{
 .owl-dot:hover{
     background: var(--primary-color)!important;
 }
+/* contact section */
+section.contact .container .title::after{
+    content:"06";
+}
+.contact .contact-content .left{
+    margin-top:20px;
+}
+.contact .left .info .box{
+    display:flex;
+    align-items: center;
+    margin:10px 0;
+}.contact .left .info .box i{
+    font-size: 23px;
+    color:var(--primary-color);
+
+}
+.contact .left .info .box .in{
+    margin-left:20px;
+}
+.contact .left .info .box .head{
+    font-weight: 600;
+}
+.contact .left .info .box .subtitle{
+    font-size: 14px;
+}
+.contact .left .info .box .m{
+    margin-left:24px;
+}
+.contact .contact-content .right{
+    margin-top:50px;
+}
+.contact .contact-content .right h3{
+    margin-bottom: 7px;
+}
+.contact .contact-content .right .fields{
+    display:flex;
+    flex-direction: column;
+}
+.contact .contact-content .right .fields .field{
+    height: 45px;
+    border:1px solid #222;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.contact .right .fields input{
+    width:100%;
+    border:none;
+    border-radius: 6px;
+    font-size: 17px;
+    outline:none;
+    padding-left:10px;
+    height: 100%;
+}
+.contact .right form textarea{
+    border-radius: 6px;
+    resize: none;
+    width:100%;
+    padding:10px;
+    font-size: 17px;
+}
+.contact .right form input[type="submit"]{
+    background:var(--primary-color);
+    color:#fff;
+    padding:6px 12px;
+    display:inline-block;
+    margin-top:20px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-family: "Poppins",sans-serif;
+    border:2px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+.contact .right form input[type="submit"]:hover{
+    background:none;
+    color:var(--primary-color);
+}
+footer{
+    text-align: center;
+    background:#222;
+    padding:20px 0;
+    color:#fff;
+    font-size: 12px;
+}
+footer span{
+    color:var(--primary-color);
+}
 /* Responsive */
 @media only screen and (min-width:907px){
     .container{
@@ -583,7 +669,8 @@ section.testimonials{
     }
     header nav ul li a{
         color:#000;
-        font-size: 21px;
+        font-size: 19px;
+        font-weight: 400;
         margin:10px;
         transition: all 0.3s ease;
     }
@@ -670,7 +757,32 @@ section.testimonials{
     .skills .skills-content .right{
         margin-top:40px;
     }
+    .contact .contact-content{
+        display: flex;
+        align-items: center;
+        margin-top:90px;
+    }
+     .contact .contact-content .left{
+        padding-right:20px;
+    }
+    .contact .contact-content .left{
+        margin-top:0;
+    }
+    .contact .contact-content .right{
+        margin-top:0;
+    }
+    footer{
+        font-size:17px;
+    }
 } 
+@media only screen and (min-width:500px){
+    .contact .contact-content .right .fields{
+        flex-direction: row;
+    }
+    .contact .right  .field.email{
+        margin-left:20px;
+    }
+}
 @media only screen and (min-width:470px){
     .home .home-left .text{
         font-size: 22px;
