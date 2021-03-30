@@ -471,9 +471,6 @@ section.portfolio .container .title::after{
     color:var(--primary-color);
 }
 /* Testmonials section */
-section.testimonials .container .title::before{
-
-}
 section.testimonials .container .title::after{
     content:"06";
     background:#222;
