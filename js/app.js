@@ -54,3 +54,20 @@ const typing = new Typed('.typing',{
     backSpeed:60,
     loop:true
 });
+
+// // Scroll Reveal Animation
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '80px',
+//     duration: 2000,
+//     reset:true
+// })
+
+// home
+// sr.reveal('.home-left',{delay:500});
+// sr.reveal('.home-right',{delay:400});
+// About
+// services
+// skills
+// testmonials
+// contact
