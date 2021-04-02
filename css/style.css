@@ -636,6 +636,7 @@ footer{
 footer span{
     color:var(--primary-color);
 }
+
 /* Responsive */
 @media only screen and (min-width:907px){
     .container{
